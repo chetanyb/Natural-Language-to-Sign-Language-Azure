@@ -13,9 +13,15 @@ const Input = () => {
         console.log(input);
     };
     return (
-        <form onSubmit={handleSubmit} class="from-orange-100">
-            <input type="text" value={input} onChange={handleInput} />
-            <button type="submit">Submit</button>
+        <form onSubmit={handleSubmit} className="">
+            <input className="" type="text" value={input} onChange={handleInput} />
+            <button className="group relative" type="submit">
+  <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-300 group-hover:from-indigo-700 group-hover:to-blue-500"></span>
+  <span className="relative text-white">
+    Submit
+  </span>
+</button>
+
         </form>
     );
 }
