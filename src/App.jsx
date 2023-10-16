@@ -4,11 +4,15 @@ import { Output } from "./components/output";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [inputValue, setInputValue] = useState("");
   return (
-    <div>
-      <Input />
+    <div
+      className="bg-cover rounded-2xl shadow max-h-screen max-w-screen overflow-hidden overflow-y-auto"
+      style={{ backgroundImage: `url(pattern2.png)` }}
+    >
+      <Output result={inputValue} />
+      <Input onInputSubmit={setInputValue} />
+      <br></br>
     </div>
   );
 }

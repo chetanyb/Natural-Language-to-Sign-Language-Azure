@@ -1,26 +1,18 @@
 import React from "react";
 
-const Output = () => {
+const Output = ({ result }) => {
   return (
-    <div className="flex items-center justify-center m-10">
-      <svg
-        className="m-auto"
-        width="100%"
-        height="100%"
-        style={{ position: "absolute", top: 0, right: 0 }}
-      >
-        <rect
-          className="text-gray-200 fill-transparent stroke-current stroke-2"
-          width="50%"
-          height="50%"
-          rx="25"
-          ry="25"
-        />
-        <path
-          className="text-gray-200 stroke-current stroke-2"
-          d="M 25% 25% L 75% 75% M 25% 75% L 75% 25%"
-        />
-      </svg>
+    <div>
+      <h1 className=" text-cyan-800 p-8 mix-blend-color-burn">
+        Natural Language to Sign Language
+      </h1>
+      <div className="m-10 max-h-screen overflow-y-auto">
+        <div className="rounded-lg p-4">
+          <div className="border border-e-4 border-s-4 border-slate-400 rounded-lg p-2">
+            <p className="text-gray-700 break-words">{result}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

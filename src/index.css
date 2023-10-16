@@ -8,8 +8,12 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(255, 255, 255, 0.87); */
+  --tw-gradient-from: #ffe8da; /* Start color */
+  --tw-gradient-to: #5c8f92;   /* End color */
+  background-image: linear-gradient(to right, var(--tw-gradient-from) 50%, var(--tw-gradient-to) 50%);
+  /* background-color: #242424; */
+  /* background-color: transparent; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
