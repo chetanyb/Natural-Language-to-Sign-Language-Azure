@@ -1,8 +1,29 @@
-# React + Vite
+# Natural Language to Sign Language Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project aims to convert natural language text into American Sign Language (ASL). It's built using React and Vite, and utilizes Tailwind CSS for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/chetanyb/Natural-Language-to-Sign-Language-Azure.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd Natural-Language-to-Sign-Language-Azure
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+   ```
+   npm run dev
+   ```
+2. Open your browser and navigate to `http://localhost:3000`.
+3. Enter the text you want to convert into the input field and click "Submit".
