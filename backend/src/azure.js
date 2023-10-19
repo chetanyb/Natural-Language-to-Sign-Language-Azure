@@ -1,4 +1,5 @@
 const axios = require("axios");
+require("dotenv").config();
 const { AZURE_ENDPOINT, AZURE_KEY } = process.env;
 
 async function analyzeText(text) {
