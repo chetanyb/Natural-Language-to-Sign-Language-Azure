@@ -2,7 +2,7 @@ const videoJSON = require("../../../dataset/WLASL/WLASL_v0.3.json");
 
 async function findVideoURL(id) {
   try {
-    const videoURL = await videoJSON[id].instances[0].url;
+    const videoURL = await videoJSON[id].instances[1].url;
     if (videoURL) {
       return videoURL;
     } else {

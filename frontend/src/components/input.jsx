@@ -10,7 +10,6 @@ const Input = ({ onInputSubmit }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     onInputSubmit(input);
-    console.log(input);
   };
   return (
     <form onSubmit={handleSubmit} className="">
