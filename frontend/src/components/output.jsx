@@ -1,17 +1,23 @@
 import React from "react";
+import ReactPlayer from "react-player";
+import "../animations.css";
 
-const Output = ({ result }) => {
+const Output = ({ videoUrl }) => {
   return (
-    <div>
-      <h1 className=" text-cyan-800 p-8 mix-blend-color-burn">
+    <div className="flex flex-col items-center justify-center max-h-screen">
+      <h1 className="text-cyan-800 p-8 mix-blend-color-burn text-2xl md:text-4xl font-bold mb-4">
         Natural Language to Sign Language
       </h1>
-      <div className="m-10 max-h-screen overflow-y-auto">
-        <div className="rounded-lg p-4">
-          <div className="border border-e-4 border-s-4 border-slate-400 rounded-lg p-2">
-            <p className="text-gray-700 break-words">{result}</p>
-          </div>
-        </div>
+      <div className=" dynamic-bg p-4 border-4 border-slate-400 rounded-lg">
+        <ReactPlayer
+          url={
+            videoUrl ||
+            "https://via.placeholder.com/480x270.png?text=Video+Player+Placeholder"
+          } // Placeholder URL
+          controls={true}
+          width="480px"
+          height="270px"
+        />
       </div>
     </div>
   );
