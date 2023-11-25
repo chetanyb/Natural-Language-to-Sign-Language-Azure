@@ -12,7 +12,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ word: inputValue }),
+      body: JSON.stringify({ text: inputValue }),
     });
 
     if (response.ok) {
