@@ -1,7 +1,3 @@
-Certainly! Adding emojis can make the README more engaging. Here's the revised version with added emojis:
-
----
-
 # 🤟 Natural Language to Sign Language Conversion
 
 ## 🌟 Overview
@@ -70,9 +66,6 @@ To run the application, you'll need to start both the frontend and backend servi
   ```
   This initiates the backend service.
 
----
-
-You can copy this entire section and paste it into your `README.md` file. The emojis should add a more vibrant and engaging touch to the documentation.
 ## Contributing
 
 Contributions to enhance and expand this project are highly welcome. Whether it's feature improvements, bug fixes, or documentation, your input is valuable. Please feel free to fork the repository and submit pull requests.
