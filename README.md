@@ -15,7 +15,7 @@ This innovative project 🚀 aims to bridge communication gaps by converting nat
 
 To get started, ensure you have the following prerequisites installed and configured:
 
-- **📚 WLASL Dataset**: A comprehensive dataset for word-level American Sign Language.
+- **📚 WLASL Dataset**: A comprehensive dataset for word-level American Sign Language. [View on Kaggle](https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed)
 - **🔥 Redis**: An in-memory data structure store, used as a database, cache, and message broker.
 - **💾 PostgreSQL**: A powerful, open-source object-relational database system.
 
