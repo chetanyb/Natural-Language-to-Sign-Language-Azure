@@ -48,6 +48,12 @@ cd ../backend
 npm install
 ```
 
+### 4️⃣ Generate and Configure Database
+
+- **Generate CSV**: Place the `generateCSV.sh` script in your WLASL dataset folder. Execute this script to generate a CSV file.
+- **Configure PostgreSQL Database**: Import the generated CSV into your PostgreSQL database. 
+- **Database Connection Configuration**: Use the `.env` file and `sequelize.js` to configure your connection to the PostgreSQL database table.
+
 ## 🚀 Running the Application
 
 To run the application, you'll need to start both the frontend and backend services:
