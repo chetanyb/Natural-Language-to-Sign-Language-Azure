@@ -5,7 +5,9 @@ const extractNouns = require("../utils/extractNouns");
 
 async function convertNL2ASL(req, res) {
   try {
+    //Extracting user input
     const { text } = req.body;
+    //Extracting nouns from the user input
     const nouns = extractNouns(text);
 
     // If no nouns are found or use the first noun for simplicity
