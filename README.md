@@ -50,10 +50,19 @@ npm install
 
 ### 4️⃣ Generate and Configure Database
 
-- **Generate CSV**: Place the `generateCSV.sh` script in your WLASL dataset folder. Execute this script to generate a CSV file.
-- **Configure PostgreSQL Database**: Import the generated CSV into your PostgreSQL database. 
-- **Database Connection Configuration**: Use the `.env` file and `sequelize.js` to configure your connection to the PostgreSQL database table.
-
+- **Download and Extract WLASL Dataset**: First, download the WLASL dataset from the provided [Kaggle link](https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed). After downloading, extract the dataset to a known directory.
+- **Place the `generateCSV.sh` Script**: Move the `generateCSV.sh` script into the WLASL folder within the extracted directory. Use the following command:
+  ```
+  mv generateCSV.sh path/to/extracted/WLASL/
+  ```
+- **Run the Script to Generate CSV**: Inside the WLASL folder, execute the `generateCSV.sh` script to generate the necessary CSV file:
+  ```
+  cd path/to/extracted/WLASL/
+  ./generateCSV.sh
+  ```
+  This will create a CSV file that will be used for feeding data into the database.
+- **Configure PostgreSQL Database**: Import the generated CSV file into your PostgreSQL database.
+- **Database Connection Configuration**: Utilize the `.env` file and `sequelize.js` for setting up the connection to your PostgreSQL database table. Ensure that the database connection details match your PostgreSQL configuration.
 ## 🚀 Running the Application
 
 To run the application, you'll need to start both the frontend and backend services:
