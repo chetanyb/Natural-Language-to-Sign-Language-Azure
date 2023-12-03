@@ -68,7 +68,7 @@ npm install
 To run the application, you'll need to start both the frontend and backend services:
 
 - **🌐 Frontend**:
-  Open a terminal window in the frontend directory and execute:
+  Open a terminal window and navigate to the frontend directory and execute:
   ```
   npm run dev
   ```
